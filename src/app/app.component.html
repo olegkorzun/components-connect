@@ -1,0 +1,23 @@
+
+<h1>My Second Anngular App</h1>
+<h2>First Component</h2>
+<app-first
+(onAdd)="updateMessages($event)"
+></app-first>
+<h2>Message Component</h2>
+<app-message
+*ngFor="let m of messages"
+[mess]="m"
+></app-message>
+
+
+
+<!--h1>Welcome</!--h1>
+<p>{{ title }} app is running!</p>
+<p>The date is {{today | date:'fullDate'}}</p>
+<p>My Friends</p>
+<ul>
+  <li *ngFor="let friend of friends" (click)="myFriend(friend)">
+    {{friend}}
+  </li>
+</ul-->
